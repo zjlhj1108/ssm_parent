@@ -5,14 +5,19 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <spring.version>5.2.9</spring.version>
+        <spring.version>5.2.9.RELEASE</spring.version>
     </properties>
     <modelVersion>4.0.0</modelVersion>
     <!--关于继承的一些jar管理-->
     <dependencyManagement>
-
-
-
+        <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+        </dependencies>
 
     </dependencyManagement>
 
