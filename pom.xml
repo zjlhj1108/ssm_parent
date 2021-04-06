@@ -8,23 +8,53 @@
         <spring.version>5.2.9.RELEASE</spring.version>
     </properties>
     <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.zjl</groupId>
+    <artifactId>ssm_parent</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <!--关于继承的一些jar管理-->
-    <dependencyManagement>
+        <dependencyManagement>
         <dependencies>
         <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+
+            <!--核心包-->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-core</artifactId>
                 <version>${spring.version}</version>
             </dependency>
+            <!--上下文包-->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-expression</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aspects</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
         </dependencies>
-
-    </dependencyManagement>
-
-
-    <groupId>com.zjl</groupId>
-    <artifactId>ssm_parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+        </dependencyManagement>
     <modules>
         <module>ssm_controller</module>
     </modules>
