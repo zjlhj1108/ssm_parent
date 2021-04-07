@@ -57,6 +57,9 @@
         </dependencyManagement>
     <modules>
         <module>ssm_controller</module>
+        <module>springmvc</module>
+        <module>webmvc</module>
+        <module>webmvc</module>
     </modules>
     <packaging>pom</packaging>
 
