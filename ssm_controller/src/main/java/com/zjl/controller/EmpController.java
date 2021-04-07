@@ -8,7 +8,7 @@ public class EmpController {
         System.out.println(111);
     }
 
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         System.out.println("打印一句话");
     }
 }
