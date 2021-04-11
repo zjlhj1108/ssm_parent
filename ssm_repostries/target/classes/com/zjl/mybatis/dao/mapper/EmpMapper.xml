@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjl.mybatis.dao.mapper.EmpMapper">
+	<sql id="getAllEmp">
+	SELECT eid, eName, password, telephone, did from emp
+	</sql>
+	<select id="selectAllEmp" resultType="emp">
+		<include refid="getAllEmp"></include>
+	</select>
+	
+</mapper>
